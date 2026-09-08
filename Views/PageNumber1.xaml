@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Views.NiggerNumber1"
+             Title="NiggerNumber1">
+    <VerticalStackLayout Padding="30" Spacing="15">
+        
+        <Label x:Name="ResultLabel"
+               Text="the answer will be shown here"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="0,50,0,0"/>
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Spacing="10"
+            Margin="0,100,0,0">
+
+            <Label Text="name:"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="NameEntry"
+                   WidthRequest="100"
+                   Placeholder="name"/>
+
+            <Label Text="age:"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="AgeEntry"
+                   WidthRequest="60"
+                   Placeholder="age"
+                   Keyboard="Numeric"/>
+
+            <Button Text="press"
+                    Clicked="Button_Click"/>
+
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+
+</ContentPage>
