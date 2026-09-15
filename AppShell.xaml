@@ -15,6 +15,10 @@
     <ShellContent
     Title="not Home"
     ContentTemplate="{DataTemplate local:NiggerNum2}"
-    Route="NiggerNum2" />
+    Route="PageNum2" />
+    <ShellContent
+        Title="second page"
+        ContentTemplate="{DataTemplate local:PageNumber3}"
+        Route="PageNumber3"/>
 
 </Shell>

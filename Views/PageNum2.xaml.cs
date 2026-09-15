@@ -13,8 +13,20 @@ public partial class NiggerNum2 : ContentPage
         if (int.TryParse(AgeEntry.Text, out int age))
         {
             int newAge = age + 10;
-            ResultLabel.Text =
-                $"{name} ,in ten years you will be {newAge}";
+            ResultLabel.Text = $"{name} ,in ten years you will be {newAge}";
+
+            candleHolder.Clear();
+            // Create Candles
+            for (int i = 0; i < newAge ; i++)
+            {
+                // create an Image obj with a candle
+                Image candleImg = new Image() { Source = "candle.png", WidthRequest = 10};
+
+                // add image to Stack candleHolder
+                candleHolder.Children.Add(candleImg);
+            }
+
+
         }
         else
         {

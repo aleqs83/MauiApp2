@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.Views.NiggerNumber1"
-             Title="NiggerNumber1">
+             Title="FirstPage">
     <VerticalStackLayout Padding="30" Spacing="15">
         
         <Label x:Name="ResultLabel"
